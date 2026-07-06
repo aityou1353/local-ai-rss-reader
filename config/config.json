@@ -1,0 +1,48 @@
+{
+    "app": {
+        "host": "0.0.0.0",
+        "port": 8000,
+        "debug": false,
+        "secret_key": "CHANGE_ME"
+    },
+
+    "database": {
+        "path": "database/rss.db"
+    },
+
+    "rss": {
+        "update_interval": 1800,
+        "timeout": 30,
+        "user_agent": "LocalAI-RSS/1.0"
+    },
+
+    "lmstudio": {
+        "base_url": "http://127.0.0.1:1234/v1",
+        "model": "qwen3-8b",
+        "temperature": 0.2,
+        "max_tokens": 1024,
+        "timeout": 120,
+        "max_workers": 2
+    },
+
+    "ai": {
+        "summary_length": 300,
+        "translate": true,
+        "generate_tags": true,
+        "generate_title": true,
+        "detect_duplicates": true,
+        "merge_articles": true,
+        "importance_scoring": true
+    },
+
+    "ui": {
+        "theme": "dark",
+        "default_view": "card",
+        "items_per_page": 30
+    },
+
+    "logging": {
+        "level": "INFO",
+        "directory": "logs"
+    }
+}
